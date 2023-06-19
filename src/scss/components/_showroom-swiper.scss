@@ -1,0 +1,22 @@
+.section-showroom {
+  margin-top: 77px;
+  margin-bottom: 105px;
+}
+
+
+.showroom-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  &__slide {
+    max-width: 430px;
+    height: 260px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+}

@@ -1,0 +1,174 @@
+.special-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__title {
+		font-family: 'SF-Compact-Rounded';
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 43px;
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		color: var(--color-crimson);
+		transition: all 0.3s ease-in-out;
+		font-weight: 500;
+		line-height: 19px;
+		text-decoration-line: underline;
+
+		&:hover {
+			transform: scale(1.1);
+			color: var(--color-indigo);
+		}
+	}
+
+	&__svg {
+		margin-left: 10px;
+		width: 44px;
+		height: 10px;
+		fill: currentColor;
+	}
+}
+
+.special-content {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: repeat(5, auto);
+	gap: 30px;
+	padding: 22px;
+}
+
+.card {
+	width: 243px;
+	min-height: 322px;
+	border: 0.7px solid rgba(134, 134, 134, 0.3);
+	border-radius: 4px;
+	padding: 13px 9px;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-left: -10px;
+		margin-bottom: 9px;
+
+
+	}
+
+	.header {
+		&__sales-leader {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 14px;
+			color: var(--light-color);
+			font-size: 12px;
+			line-height: 14px;
+			background: url("/img/rectangle2.png") no-repeat center;
+		}
+
+		&__svg-star {
+			fill: var(--light-color);
+		}
+	}
+
+
+	&__image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+
+		& h3 {
+			display: block;
+			font-family: 'SF-Compact-Rounded';
+			font-weight: 500;
+			line-height: 19px;
+			font-size: 16px;
+			margin: 0;
+		}
+	}
+
+	&__sub-title {
+		margin-top: 8px;
+
+		& span {
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	&__state {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 9px;
+		margin-bottom: 11px;
+
+		& span {
+			font-weight: 300;
+			font-size: 12px;
+			line-height: 14px;
+			text-decoration-line: underline;
+			color: var(--color-boulder);
+		}
+	}
+
+	.state {
+		&__in-stock {
+			color: var(--color-eucalyptus);
+		}
+	}
+
+
+	&__price {
+		font-weight: 500;
+		font-size: 20.202px;
+		line-height: 24px;
+		margin-bottom: 11px;
+
+		& span {
+			font-weight: 400;
+			font-size: 10.862px;
+			line-height: 13px;
+		}
+
+
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.card-btns {
+		.card-btn {
+			opacity: 0.98;
+			padding: 8px 19px;
+			border-radius: 4px;
+		}
+
+		&__click-one {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 16px;
+			text-align: center;
+			color: var(--light-color);
+			background-color: var(--color-indigo);
+
+		}
+
+		&__basket {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid var(--color-indigo);
+			fill: var(--color-indigo);
+
+		}
+	}
+}

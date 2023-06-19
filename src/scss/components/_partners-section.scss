@@ -1,0 +1,42 @@
+.partners-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 50px;
+
+
+    svg {
+      display: block;
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+
+    }
+
+    &--prev {}
+
+    &--next {}
+  }
+}

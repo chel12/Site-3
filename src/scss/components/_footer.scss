@@ -1,0 +1,90 @@
+.container {
+  &__footer {
+    background-color: #F7F7F7;
+  }
+}
+
+.footer-top {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px -30px;
+  padding: 40px 30px 20px;
+  border-bottom: 1px solid #B8B8B8;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.footer-column {
+
+  &__list {}
+
+  &__item {
+    color: var(--color-mineShaft);
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    font-family: 'SF-Compact-Rounded';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__link {
+    font-family: 'Roboto';
+    line-height: 19px;
+    color: var(--color-mineShaft);
+
+    &--tel {
+      font-weight: 500;
+    }
+
+    &--mail {
+      text-decoration-line: underline;
+    }
+
+    &--city {
+      font-weight: 500;
+    }
+
+    &--street {
+      text-decoration-line: underline;
+    }
+  }
+
+  .social__whatsp {
+    margin-right: 10px;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  &__copyright {}
+
+  &__logo {}
+}
+
+.img-visacard {
+  margin-right: 30px;
+}
+
+.copyright__sub-title {
+  font-size: 14px;
+  line-height: 21px;
+  color: #494949;
+  margin: 0;
+}
